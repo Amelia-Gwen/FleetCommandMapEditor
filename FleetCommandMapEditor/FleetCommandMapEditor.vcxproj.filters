@@ -13,5 +13,45 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Architexture">
+      <UniqueIdentifier>{b6153a87-cb92-4a31-baa6-d19a4a880662}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Architexture\Header">
+      <UniqueIdentifier>{dec8ff64-0b74-4880-a83b-075f34f6f44a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Architexture\Source">
+      <UniqueIdentifier>{fb0ef028-db10-4bc1-a09d-f6b7bda42a47}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Architexture\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="MapEditor.cpp">
+      <Filter>Architexture\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Architexture\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="View.cpp">
+      <Filter>Architexture\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller.cpp">
+      <Filter>Architexture\Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MapEditor.h">
+      <Filter>Architexture\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Architexture\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="View.h">
+      <Filter>Architexture\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller.h">
+      <Filter>Architexture\Header</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
