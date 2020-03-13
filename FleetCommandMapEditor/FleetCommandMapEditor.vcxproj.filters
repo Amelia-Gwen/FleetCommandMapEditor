@@ -48,6 +48,9 @@
     <ClCompile Include="Controller.cpp">
       <Filter>Architexture\Source</Filter>
     </ClCompile>
+    <ClCompile Include="SelectionScreen.cpp">
+      <Filter>Screens\Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MapEditor.h">
@@ -68,8 +71,11 @@
     <ClInclude Include="IScreen.h">
       <Filter>Screens\Header</Filter>
     </ClInclude>
-    <ClInclude Include="SelectionPage.h">
+    <ClInclude Include="SelectionScreen.h">
       <Filter>Screens\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorEvent.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

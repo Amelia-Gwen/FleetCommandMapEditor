@@ -6,7 +6,7 @@
 namespace fleet {
 	class Controller {
 	public:
-		explicit Controller(const View& view, Model& model);
+		explicit Controller(const View& view, Model& model) : view{ view }, model{ model } {}
 
 		void input();
 	private:
