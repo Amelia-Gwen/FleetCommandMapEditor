@@ -5,3 +5,7 @@ fleet::Controller::Controller(const View& view, Model& model) :
 	model{ model }
 {
 }
+
+void fleet::Controller::input()
+{
+}

@@ -22,6 +22,15 @@
     <Filter Include="Architexture\Source">
       <UniqueIdentifier>{fb0ef028-db10-4bc1-a09d-f6b7bda42a47}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Screens">
+      <UniqueIdentifier>{83953144-a38e-4f55-af75-8226f40b821e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Screens\Header">
+      <UniqueIdentifier>{7efc643d-e637-4d1a-98bb-5db530790246}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Screens\Source">
+      <UniqueIdentifier>{2d616fca-d0b9-4a41-a24d-db0f8f6b79f8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -52,6 +61,15 @@
     </ClInclude>
     <ClInclude Include="Controller.h">
       <Filter>Architexture\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Expressions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IScreen.h">
+      <Filter>Screens\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectionPage.h">
+      <Filter>Screens\Header</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

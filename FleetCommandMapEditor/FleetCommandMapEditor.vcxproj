@@ -27,8 +27,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Controller.h" />
+    <ClInclude Include="Expressions.h" />
+    <ClInclude Include="IScreen.h" />
     <ClInclude Include="MapEditor.h" />
     <ClInclude Include="Model.h" />
+    <ClInclude Include="SelectionPage.h" />
     <ClInclude Include="View.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
