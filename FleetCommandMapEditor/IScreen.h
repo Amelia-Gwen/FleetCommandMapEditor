@@ -2,6 +2,8 @@
 
 #include "EditorEvent.h"
 
+#include <SFML\Graphics.hpp>
+
 namespace fleet {
 	class IScreen {
 	public:

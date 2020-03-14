@@ -4,6 +4,7 @@
 #include "Expressions.h"
 #include "IScreen.h"
 #include "Model.h"
+#include "Screens.h"
 
 #include "SFML\Graphics.hpp"
 
@@ -12,7 +13,7 @@
 namespace fleet {
 	class View {
 	public:
-		explicit View(const Model& model) : model{ model } {}
+		explicit View(const Model& model);
 
 		bool isOpen() const { return window.isOpen(); }
 		bool pollEvent(sf::Event& event) { return window.pollEvent(event); }

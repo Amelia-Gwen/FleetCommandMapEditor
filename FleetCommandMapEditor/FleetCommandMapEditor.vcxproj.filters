@@ -77,5 +77,8 @@
     <ClInclude Include="EditorEvent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Screens.h">
+      <Filter>Screens\Header</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

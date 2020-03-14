@@ -33,6 +33,7 @@
     <ClInclude Include="IScreen.h" />
     <ClInclude Include="MapEditor.h" />
     <ClInclude Include="Model.h" />
+    <ClInclude Include="Screens.h" />
     <ClInclude Include="SelectionScreen.h" />
     <ClInclude Include="View.h" />
   </ItemGroup>

@@ -2,15 +2,18 @@
 
 #include "Model.h"
 #include "View.h"
+#include "EditorEvent.h"
 
 namespace fleet {
 	class Controller {
 	public:
-		explicit Controller(const View& view, Model& model) : view{ view }, model{ model } {}
+		explicit Controller(View& view, Model& model) : view{ view }, model{ model } {}
 
 		void input();
 	private:
-		const View& view;
+		View& view;
 		Model& model;
+
+		void processEvent(EditorEvent editorEvent);
 	};
 }
