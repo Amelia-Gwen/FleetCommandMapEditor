@@ -54,6 +54,9 @@
     <ClCompile Include="GUIButton.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MapScreen.cpp">
+      <Filter>Screens\Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MapEditor.h">
@@ -85,6 +88,9 @@
     </ClInclude>
     <ClInclude Include="GUIButton.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MapScreen.h">
+      <Filter>Screens\Header</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

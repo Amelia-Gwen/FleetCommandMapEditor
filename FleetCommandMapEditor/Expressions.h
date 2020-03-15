@@ -14,4 +14,5 @@ namespace fleet {
 	constexpr float selection_large_x = 870.f;
 	constexpr float selection_y = 500.f;
 
+
 }

@@ -23,6 +23,7 @@
     <ClCompile Include="GUIButton.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="MapEditor.cpp" />
+    <ClCompile Include="MapScreen.cpp" />
     <ClCompile Include="Model.cpp" />
     <ClCompile Include="SelectionScreen.cpp" />
     <ClCompile Include="View.cpp" />
@@ -34,6 +35,7 @@
     <ClInclude Include="GUIButton.h" />
     <ClInclude Include="IScreen.h" />
     <ClInclude Include="MapEditor.h" />
+    <ClInclude Include="MapScreen.h" />
     <ClInclude Include="Model.h" />
     <ClInclude Include="Screens.h" />
     <ClInclude Include="SelectionScreen.h" />

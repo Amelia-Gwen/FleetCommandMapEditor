@@ -22,10 +22,10 @@ namespace fleet {
 		sf::Vector2f mousePos{ static_cast<float>(sf::Mouse::getPosition(window).x), static_cast<float>(sf::Mouse::getPosition(window).y) };
 
 		if (smallMapButton.input(mousePos)) {
-
+			return EditorEvent::OpenSmall;
 		}
 		else if (largeMapButton.input(mousePos)) {
-
+			return EditorEvent::OpenLarge;
 		}
 
 		return EditorEvent::None;

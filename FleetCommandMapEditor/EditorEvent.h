@@ -1,5 +1,7 @@
 #pragma once
 
 enum class EditorEvent {
-	None
+	None,
+	OpenSmall,
+	OpenLarge
 };

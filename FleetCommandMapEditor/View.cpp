@@ -9,6 +9,7 @@ namespace fleet {
 		font.loadFromFile("a-song-for-jennifer/a-song-for-jennifer.ttf");
 
 		screens.emplace(std::make_pair("Selection Screen", std::make_unique<SelectionScreen>(window, font)));
+		screens.emplace(std::make_pair("Map Screen", std::make_unique<MapScreen>(window, font)));
 
 		currentScreen = screens["Selection Screen"].get();
 	}
