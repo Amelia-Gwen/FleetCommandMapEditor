@@ -13,13 +13,6 @@ namespace fleet {
 		currentScreen = screens["Selection Screen"].get();
 	}
 
-	void View::draw()
-	{
-		window.clear();
-		currentScreen->draw();
-		window.display();
-	}
-
 	EditorEvent View::input()
 	{
 		EditorEvent editorEvent = currentScreen->input();
@@ -33,5 +26,14 @@ namespace fleet {
 		window.draw(backgroundSprite);
 		currentScreen->draw();
 		window.display();
+	}
+	void View::checkEvent(EditorEvent& editorEvent)
+	{
+		switch (editorEvent)
+		{
+		case EditorEvent::None:
+		default:
+			break;
+		}
 	}
 }

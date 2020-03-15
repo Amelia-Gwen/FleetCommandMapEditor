@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Controller.cpp" />
+    <ClCompile Include="GUIButton.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="MapEditor.cpp" />
     <ClCompile Include="Model.cpp" />
@@ -30,6 +31,7 @@
     <ClInclude Include="Controller.h" />
     <ClInclude Include="EditorEvent.h" />
     <ClInclude Include="Expressions.h" />
+    <ClInclude Include="GUIButton.h" />
     <ClInclude Include="IScreen.h" />
     <ClInclude Include="MapEditor.h" />
     <ClInclude Include="Model.h" />
