@@ -25,7 +25,9 @@
     <ClCompile Include="MapEditor.cpp" />
     <ClCompile Include="MapScreen.cpp" />
     <ClCompile Include="Model.cpp" />
+    <ClCompile Include="NameScreen.cpp" />
     <ClCompile Include="SelectionScreen.cpp" />
+    <ClCompile Include="ToolBox.cpp" />
     <ClCompile Include="View.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -37,8 +39,10 @@
     <ClInclude Include="MapEditor.h" />
     <ClInclude Include="MapScreen.h" />
     <ClInclude Include="Model.h" />
+    <ClInclude Include="NameScreen.h" />
     <ClInclude Include="Screens.h" />
     <ClInclude Include="SelectionScreen.h" />
+    <ClInclude Include="ToolBox.h" />
     <ClInclude Include="View.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

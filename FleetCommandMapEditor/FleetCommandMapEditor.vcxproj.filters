@@ -57,6 +57,12 @@
     <ClCompile Include="MapScreen.cpp">
       <Filter>Screens\Source</Filter>
     </ClCompile>
+    <ClCompile Include="ToolBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NameScreen.cpp">
+      <Filter>Screens\Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MapEditor.h">
@@ -90,6 +96,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MapScreen.h">
+      <Filter>Screens\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NameScreen.h">
       <Filter>Screens\Header</Filter>
     </ClInclude>
   </ItemGroup>
