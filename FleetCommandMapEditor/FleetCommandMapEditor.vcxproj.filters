@@ -60,9 +60,6 @@
     <ClCompile Include="ToolBox.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="NameScreen.cpp">
-      <Filter>Screens\Source</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MapEditor.h">
@@ -100,9 +97,6 @@
     </ClInclude>
     <ClInclude Include="ToolBox.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="NameScreen.h">
-      <Filter>Screens\Header</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
