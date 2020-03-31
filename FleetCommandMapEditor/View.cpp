@@ -32,6 +32,14 @@ namespace fleet {
 	{
 		switch (editorEvent)
 		{
+		case EditorEvent::OpenSmall:
+			currentScreen = screens["Map Screen"].get();
+			dynamic_cast<MapScreen*>(currentScreen)->open("small");
+			break;
+		case EditorEvent::OpenLarge:
+			currentScreen = screens["Map Screen"].get();
+			dynamic_cast<MapScreen*>(currentScreen)->open("large");
+			break;
 		case EditorEvent::None:
 		default:
 			break;

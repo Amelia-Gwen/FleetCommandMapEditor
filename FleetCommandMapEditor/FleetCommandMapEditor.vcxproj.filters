@@ -60,6 +60,9 @@
     <ClCompile Include="ToolBox.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="InnerMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MapEditor.h">
@@ -98,5 +101,16 @@
     <ClInclude Include="ToolBox.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="InnerMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="largemap.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="smallmap.txt">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

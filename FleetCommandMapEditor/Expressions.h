@@ -13,6 +13,6 @@ namespace fleet {
 	constexpr float selection_small_x = 235.f;
 	constexpr float selection_large_x = 870.f;
 	constexpr float selection_y = 500.f;
-
-
+	
+	//Map Screen
 }
