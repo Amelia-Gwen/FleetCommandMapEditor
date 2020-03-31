@@ -2,8 +2,9 @@
 
 #include <fstream>
 
-void InnerMap::load(std::string size)
+void InnerMap::load(std::string _size)
 {
+	size = _size;
 	std::string filename = size + "map.txt";
 	std::ifstream reader;
 	reader.open(filename);
@@ -12,5 +13,16 @@ void InnerMap::load(std::string size)
 	int token;
 	while (reader >> token) {
 		tileMap.push_back(token);
+	}
+}
+
+void InnerMap::save()
+{
+	std::string filename = size + "map.txt";
+	std::ofstream writer;
+	writer.open(filename);
+
+	for (auto token : tileMap) {
+		writer << token << ' ';
 	}
 }

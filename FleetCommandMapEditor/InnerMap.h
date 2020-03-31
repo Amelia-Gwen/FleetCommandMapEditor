@@ -7,7 +7,9 @@
 
 class InnerMap {
 public:
-	void load(std::string size = "small");
+	void load(std::string _size);
+	void save();
 private:
+	std::string size;
 	std::vector<int> tileMap;
 };
