@@ -20,5 +20,8 @@ namespace fleet {
 
 	void ToolBox::draw(sf::RenderTarget& target, sf::RenderStates states) const
 	{
+		for (auto& tool : tools) {
+			target.draw(tool, states);
+		}
 	}
 }

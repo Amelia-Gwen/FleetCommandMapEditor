@@ -13,6 +13,6 @@ namespace fleet {
 		void update() override;
 		void draw() override;
 	private:
-		ToolBox toolBox;
+		ToolBox toolBox{ window, font };
 	};
 }
