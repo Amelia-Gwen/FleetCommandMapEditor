@@ -2,9 +2,8 @@
 
 #include <fstream>
 
-void InnerMap::load(std::string _size)
+void InnerMap::load()
 {
-	size = _size;
 	std::string filename = size + "map.txt";
 	std::ifstream reader;
 	reader.open(filename);
