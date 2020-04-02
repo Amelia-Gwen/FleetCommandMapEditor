@@ -20,10 +20,8 @@ namespace fleet {
 		void update() override;
 		void draw() override;
 	private:
-		ToolBox toolBox{ window, font };
+		ToolBox toolBox{ window };
 		InnerMap innerMap;
 		std::vector<sf::RectangleShape> tiles;
-
-		void createTile(int token);
 	};
 }

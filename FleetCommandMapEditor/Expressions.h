@@ -14,5 +14,11 @@ namespace fleet {
 	constexpr float selection_large_x = 870.f;
 	constexpr float selection_y = 500.f;
 	
-	//Map Screen
+	// Map Screen
+
+	// Tool Box
+	constexpr unsigned number_of_tools = 6u;
+	constexpr float tool_side_length = 60.f;
+
+	// Inner Map
 }

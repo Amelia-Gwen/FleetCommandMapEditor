@@ -2,6 +2,11 @@
 
 #include <fstream>
 
+void InnerMap::setSize(std::string size_)
+{
+	size = size_;
+}
+
 void InnerMap::load()
 {
 	std::string filename = size + "map.txt";
@@ -11,7 +16,7 @@ void InnerMap::load()
 	tileMap.clear();
 	int token;
 	while (reader >> token) {
-		tileMap.push_back(token);
+		tileValues.push_back(token);
 	}
 }
 
@@ -21,7 +26,14 @@ void InnerMap::save()
 	std::ofstream writer;
 	writer.open(filename);
 
-	for (auto token : tileMap) {
+	for (auto token : tileValues) {
 		writer << token << ' ';
+	}
+}
+
+void InnerMap::draw(sf::RenderTarget & target, sf::RenderStates states) const
+{
+	for (auto& tile : tileMap) {
+		target.draw(tile, states);
 	}
 }
