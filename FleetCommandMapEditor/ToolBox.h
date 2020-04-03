@@ -24,9 +24,9 @@ namespace fleet {
 		Selection selection{ Selection::None };
 
 		void initTools();
-		void setColor(sf::RectangleShape& tool, int index);
-		void setPosition(sf::RectangleShape& tool, int index, sf::Vector2f offset = sf::Vector2f(tool_outline, tool_outline));
-		void processSelection(int index);
+		void setColor(sf::RectangleShape& tool, unsigned index);
+		void setPosition(sf::RectangleShape& tool, unsigned index, sf::Vector2f offset = sf::Vector2f(tile_outline, tile_outline));
+		void processSelection(unsigned index);
 
 		void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 	};

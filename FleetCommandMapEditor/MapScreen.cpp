@@ -6,6 +6,8 @@ namespace fleet {
 	{
 		saveButton.setPosition(save_button_x, save_button_y);
 		saveButton.setLabelOffset(sf::Vector2f(save_offset_x, save_offset_y));
+		resetButton.setPosition(reset_button_x, reset_button_y);
+		resetButton.setLabelOffset(sf::Vector2f(reset_offset_x, reset_offset_y));
 	}
 
 	void MapScreen::open(std::string size)
@@ -24,6 +26,10 @@ namespace fleet {
 			innerMap.save();
 			return EditorEvent::ActionComplete;
 		}
+		if (resetButton.input(mousePos)) {
+			innerMap.reset();
+			return EditorEvent::ActionComplete;
+		}
 		if (toolBox.currentSelection() != Selection::None) {
 			editorEvent = innerMap.input(toolBox.currentSelection());
 		}
@@ -37,12 +43,15 @@ namespace fleet {
 
 		toolBox.update();
 		saveButton.update(mousePos);
+		resetButton.update(mousePos);
+		innerMap.update();
 	}
 	
 	void MapScreen::draw()
 	{
 		window.draw(toolBox);
 		window.draw(saveButton);
+		window.draw(resetButton);
 		window.draw(innerMap);
 	}
 }

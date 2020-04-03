@@ -42,11 +42,11 @@ namespace fleet {
 			tools.emplace_back(sf::RectangleShape(sf::Vector2f(tool_side_length, tool_side_length)));
 			setColor(tools[i], i);
 			setPosition(tools[i], i);
-			tools[i].setOutlineThickness(tool_outline);
+			tools[i].setOutlineThickness(tile_outline);
 		}
 	}
 
-	void ToolBox::setColor(sf::RectangleShape& tool, int index)
+	void ToolBox::setColor(sf::RectangleShape& tool, unsigned index)
 	{
 		switch (index) {
 		case 0:
@@ -72,14 +72,14 @@ namespace fleet {
 		}
 	}
 
-	void ToolBox::setPosition(sf::RectangleShape& tool, int index, sf::Vector2f offset)
+	void ToolBox::setPosition(sf::RectangleShape& tool, unsigned index, sf::Vector2f offset)
 	{
 		float x = (index % 2) * tool_side_length + offset.x * (((index % 2) * 2) + 1);
 		float y = (index / 2) * tool_side_length + offset.y * (((index / 2) * 2) + 1);
 		tool.setPosition(x, y);
 	}
 
-	void ToolBox::processSelection(int index)
+	void ToolBox::processSelection(unsigned index)
 	{
 		switch (index) {
 		case 0:
