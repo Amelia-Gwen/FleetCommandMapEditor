@@ -2,6 +2,8 @@
 
 #include "IScreen.h"
 
+#include "Expressions.h"
+#include "GUIButton.h"
 #include "InnerMap.h"
 #include "ToolBox.h"
 
@@ -21,6 +23,7 @@ namespace fleet {
 		void draw() override;
 	private:
 		ToolBox toolBox{ window };
+		GUIButton saveButton{ sf::Vector2f(save_button_width, save_button_height), "Save", font };
 		InnerMap innerMap;
 		std::vector<sf::RectangleShape> tiles;
 	};

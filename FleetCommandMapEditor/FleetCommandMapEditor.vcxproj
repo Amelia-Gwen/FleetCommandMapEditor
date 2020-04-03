@@ -41,6 +41,7 @@
     <ClInclude Include="MapScreen.h" />
     <ClInclude Include="Model.h" />
     <ClInclude Include="Screens.h" />
+    <ClInclude Include="Selection.h" />
     <ClInclude Include="SelectionScreen.h" />
     <ClInclude Include="ToolBox.h" />
     <ClInclude Include="View.h" />

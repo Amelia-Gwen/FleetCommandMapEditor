@@ -104,6 +104,9 @@
     <ClInclude Include="InnerMap.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Selection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="largemap.txt">

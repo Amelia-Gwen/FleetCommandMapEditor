@@ -3,5 +3,6 @@
 enum class EditorEvent {
 	None,
 	OpenSmall,
-	OpenLarge
+	OpenLarge,
+	ActionComplete
 };
