@@ -1,11 +1,11 @@
 #pragma once
 
-enum class Selection {
-	None,
+enum class Selection : unsigned {
 	Sea,
 	Forest,
 	Sand,
 	Oil,
 	Defense,
-	Factory
+	Factory,
+	None
 };

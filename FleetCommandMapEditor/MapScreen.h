@@ -5,6 +5,7 @@
 #include "Expressions.h"
 #include "GUIButton.h"
 #include "InnerMap.h"
+#include "Selection.h"
 #include "ToolBox.h"
 
 #include <SFML\Graphics.hpp>
@@ -24,7 +25,7 @@ namespace fleet {
 	private:
 		ToolBox toolBox{ window };
 		GUIButton saveButton{ sf::Vector2f(save_button_width, save_button_height), "Save", font };
-		InnerMap innerMap;
+		InnerMap innerMap{ window };
 		std::vector<sf::RectangleShape> tiles;
 	};
 }

@@ -11,7 +11,7 @@ namespace fleet {
 	{
 		sf::Vector2f mousePos{ static_cast<float>(sf::Mouse::getPosition(window).x), static_cast<float>(sf::Mouse::getPosition(window).y) };
 
-		for (int i = 0; i < number_of_tools; ++i) {
+		for (unsigned i = 0; i < number_of_tools; ++i) {
 			if (tools[i].getGlobalBounds().contains(mousePos)) {
 				processSelection(i);
 				return EditorEvent::ActionComplete;
@@ -38,7 +38,7 @@ namespace fleet {
 	void ToolBox::initTools()
 	{
 		tools.clear();
-		for (int i = 0; i < number_of_tools; ++i) {
+		for (unsigned i = 0; i < number_of_tools; ++i) {
 			tools.emplace_back(sf::RectangleShape(sf::Vector2f(tool_side_length, tool_side_length)));
 			setColor(tools[i], i);
 			setPosition(tools[i], i);

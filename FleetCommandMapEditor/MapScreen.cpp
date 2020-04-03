@@ -24,9 +24,13 @@ namespace fleet {
 			innerMap.save();
 			return EditorEvent::ActionComplete;
 		}
+		if (toolBox.currentSelection() != Selection::None) {
+			editorEvent = innerMap.input(toolBox.currentSelection());
+		}
 
 		return editorEvent;
 	}
+	
 	void MapScreen::update()
 	{
 		sf::Vector2f mousePos{ static_cast<float>(sf::Mouse::getPosition(window).x), static_cast<float>(sf::Mouse::getPosition(window).y) };
@@ -34,6 +38,7 @@ namespace fleet {
 		toolBox.update();
 		saveButton.update(mousePos);
 	}
+	
 	void MapScreen::draw()
 	{
 		window.draw(toolBox);
