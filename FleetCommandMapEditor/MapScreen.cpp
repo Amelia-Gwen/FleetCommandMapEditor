@@ -18,7 +18,14 @@ namespace fleet {
 	{
 		sf::Vector2f mousePos{ static_cast<float>(sf::Mouse::getPosition(window).x), static_cast<float>(sf::Mouse::getPosition(window).y) };
 
-		return EditorEvent();
+		EditorEvent editorEvent = toolBox.input();
+		if (editorEvent != EditorEvent::None) { return editorEvent; }
+		if (saveButton.input(mousePos)) {
+			innerMap.save();
+			return EditorEvent::ActionComplete;
+		}
+
+		return editorEvent;
 	}
 	void MapScreen::update()
 	{
