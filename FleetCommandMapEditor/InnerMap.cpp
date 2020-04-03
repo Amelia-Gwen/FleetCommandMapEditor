@@ -46,6 +46,7 @@ EditorEvent InnerMap::input(const Selection& selection)
 	for (unsigned i = 0; i < tileMap.size(); ++i) {
 		if (tileMap[i].getGlobalBounds().contains(mousePos)) {
 			tileValues[i] = value;
+			setTileColor(tileMap[i], value);
 			return EditorEvent::ActionComplete;
 		}
 	}
